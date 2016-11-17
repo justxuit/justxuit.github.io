@@ -156,7 +156,7 @@ img {
 }
 
 #portrait-about {
-margin: 4%;
+margin: 4% 0;
 border-width: 1px;
 border-color: rgba(0, 0, 0, 0.9);
 border-radius: 10px;
@@ -189,7 +189,7 @@ h2 {
 #stat-bars {
 	margin: 4% 0;
 	background-color: rgba(0, 0, 0, 0.4);
-	padding: 2% 0;
+	padding: 2%;
 	border-color: black;
 	border-radius: 10px;
 }
