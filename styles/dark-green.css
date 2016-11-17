@@ -151,6 +151,8 @@ img {
 
 #stats-name {
 	font-family: megrim;
+	font-size: 2em;
+	font-weight: bold;
 }
 
 #portrait-about {
