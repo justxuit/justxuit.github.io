@@ -216,7 +216,7 @@ h2 {
 .portfolio-desc {
 	position: absolute;
 	padding: 5px;
-	bottom: -16px;
+	bottom: 0px;
 	left: 0px;
 	color: #e6e6e6;
 	opacity: 0;
