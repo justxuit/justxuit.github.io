@@ -214,6 +214,7 @@ h2 {
 }
 
 .portfolio-desc {
+	text-align: left;
 	position: absolute;
 	padding: 5px;
 	bottom: 0px;
