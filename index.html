@@ -1,53 +1,41 @@
-<!doctype html>
-<html>
-<head>
-  <link type="text/css" rel="stylesheet" href="styles/reset.css"/>
-  <link type="text/css" rel="stylesheet" href="styles/dark-green.css"/>
-  <script src="scripts/lib/jquery-1.11.1.js"></script>
-  <title>Character Select</title>
-</head>
+<!DOCTYPE html>
+<html ng-app="hexModule">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link type="text/css" rel="stylesheet" href="/css/master.css">
 
-<body>
+    <link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
+    <title>Xuan Huang</title>
+  </head>
 
-  <!--NAVBAR HERE-->
-  <div id="navbar-sm">
-    <ul id="navbar-big">
-      <li class="link-name">
-        <a href="index.html"> >home_ </a>
-      </li>
-      <li class="link-name">
-        <a href="pages/about.html"> >about_ </a>
-      </li>
-      <li class="link-name">
-        <a href="pages/projects.html"> >projects_ </a>
-      </li>
-    </ul>
-  </div>
-  <!--NAVBAR END-->
 
-<!--character select bar-->
-  <div id="select-bar">
-    <p id="choose-char">
-      choose your character
-    </p>
-  </div>
-
-  <!-- <div class="container" id="container-left">
-    <img src="images/300x500.png" class="portrait-big" id="portrait-VERT"/>
-    <div id="name-banner">
-      Xuan
+  <body>
+    <div id="view" ng-view="">
+      Hold on to your hats...
     </div>
-  </div> -->
 
-  <div class="container" id="container-right">
-    <img src="images/125x300-lock.png" class="portrait-small portrait-blank"/>
-    <a href="pages/about.html">
-      <img src="images/125x300.png" class="portrait-small" id="portrait-vert"/>
-    </a>
-    <img src="images/125x300-lock.png" class="portrait-small portrait-blank"/>
-    <img src="images/125x300-lock.png" class="portrait-small portrait-blank"/>
+    <footer>
+      <div id="contact-bar">
+        <a href="https://www.linkedin.com/in/thexuanhuang">
+          <img src="images/icons/linkedin.svg" class="footer-icon">
+        </a>
+        <a href="https://github.com/justxuit">
+          <img src="images/icons/github.svg" class="footer-icon">
+        </a>
+        <a target="_top" href="mailto:email.xhuang@gmail.com">
+          <img src="images/icons/email.svg" class="footer-icon">
+        </a>
+      </div>
+    </footer>
 
-  </div>
-
-</body>
+    <!-- scripts -->
+    <script type="text/javascript" src="js/lib/jquery-1.11.1.js"></script>
+    <script type="text/javascript" src="js/lib/angular.min.js"></script>
+    <script type="text/javascript" src="js/lib/angular-route.min.js"></script>
+    <script type="text/javascript" src="js/routes.js"></script>
+    <!-- <script type="text/javascript" src="js/controllers.js"></script>
+    <script type="text/javascript" src="js/directives.js"></script> -->
+    <!-- end scripts -->
+  </body>
 </html>

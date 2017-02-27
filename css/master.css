@@ -1,0 +1,155 @@
+@font-face {
+  font-family: comfortaa;
+  src: url(../fonts/Comfortaa/Comfortaa-Regular.ttf);
+}
+
+@font-face {
+  font-family: poiret;
+  src: url(../fonts/Poiret_One/PoiretOne-Regular.ttf);
+}
+
+@font-face {
+  font-family: source-sans;
+  src: url(../fonts/Source_Sans_Pro/SourceSansPro-Regular.ttf)
+}
+
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+
+body {
+  font-family: sans-serif;
+}
+
+.view-container {
+  width: 45%;
+  display: block;
+  margin: 2% auto;
+  font-family: source-sans;
+}
+
+
+
+
+/*///////////splash.html////////*/
+#nav-contain-splash {
+  width: 45%;
+  margin: 1% auto 2% auto;
+  display: block;
+  /*border-bottom: 4px double black;*/
+}
+
+#hex-contain1 {
+  right: -18.5%;
+  position: relative;
+}
+
+#hex-contain2 {
+  margin: -12% auto 3% auto;
+  left: -3%;
+  position: relative;
+}
+
+.hex {
+  width: 40%;
+  display: inline-block;
+  margin: 1%;
+}
+
+#contact-bar {
+  width: 45%;
+  display: block;
+  margin: 2% auto;
+  color: #fff;
+  padding: 4px;
+  text-align: center;
+  border-top: 4px double black;
+}
+
+.footer-icon {
+  width: 30px;
+  display: inline-block;
+  margin: 3% 4% -2% 4%;
+}
+
+
+/*/////////navbar style////////////*/
+.nav-contain {
+  width: 45%;
+  display: block;
+  margin: 1% auto;
+  text-align: center;
+  border-bottom: 4px double black;
+}
+
+.navhex-sm {
+  display: inline;
+  width: 15%;
+  margin: 0 1% 4% 1%;
+}
+
+.navhex-big {
+  display: inline;
+  width: 20%;
+  margin: 0 1% 4% 1%;
+}
+
+
+
+
+/*////////////about.html//////////*/
+#my-portrait {
+  display: inline;
+  width: 50%;
+}
+
+.my-blurb {
+  padding: 2%;
+  width: 50%;
+  display: inline;
+  font-size: 1em;
+  line-height: 150%;
+}
+
+
+
+/*////////////projects.html//////////*/
+#work-blurb {
+  margin: 0 auto 5% auto;
+}
+
+.project {
+  margin: 2% auto 5% auto;
+}
+
+.project-img {
+  width: 40%;
+  opacity: 0.67;
+}
+
+.project-img:hover {
+  opacity: 1;
+  transition-duration: 0.5s;
+}
+
+
+
+/*/////////////media queries///////*/
+@media (max-width: 750px) {
+	 #nav-contain-splash {
+		 width: 90%;
+	 }
+
+   #contact-bar {
+     width: 60%;
+     /*position: fixed;*/
+   }
+
+   .footer-icon {
+     display: block;
+     margin: 10% auto;
+   }
+}
