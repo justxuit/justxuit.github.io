@@ -126,11 +126,26 @@ body {
 }
 
 .project-img {
-  width: 40%;
+  width: 65%;
+  display: inline-block;
+}
+
+.project-desc {
+  vertical-align: top;
+  width: 33%;
+  display: inline-block;
+}
+
+.project-text {
+  line-height: 125%;
+}
+
+.screenshot {
+  width: 90%;
   opacity: 0.67;
 }
 
-.project-img:hover {
+.screenshot:hover {
   opacity: 1;
   transition-duration: 0.5s;
 }
