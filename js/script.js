@@ -1,15 +1,6 @@
 document.addEventListener('DOMContentLoaded', function(){
-	// console.log('finished loading');
-	var burger = document.getElementById('burger'),
-		navMenu = document.getElementById('nav-overlay'),
-		arrowContainer = document.getElementById('bouncing-arrow-container');
+	var arrowContainer = document.getElementById('bouncing-arrow-container');
 
-	burger.onclick = function() {
-		navMenu.classList.toggle('open');
-	}
-
-	// written with help from:
-	// https://jsfiddle.net/cvmw3L1o/1/
 	if (window.location.pathname == '/index.html') {
 		document.addEventListener('scroll', (e) => {
 			var scrolledDistance = document.scrollingElement.scrollTop;
@@ -23,4 +14,42 @@ document.addEventListener('DOMContentLoaded', function(){
 	}
 
 	document.getElementById('current-year').innerText = new Date().getFullYear();
+});
+
+
+$(function() {
+	var burger = $('#burger'),
+		navBar = $('.navbar'),
+		navMenu = $('#nav-overlay'),
+		navLink = $('.subnav-container a');
+
+	function disableScroll() {
+		$('html, body').css({
+			overflow: "hidden",
+			height: "100%"
+		});
+	}
+
+	function enableScroll() {
+		$('html, body').css({
+			overflow: "auto",
+			height: "auto"
+		});
+	}
+
+	burger.on('click', function() {
+		navBar.toggleClass('open');
+		navMenu.slideToggle(200).toggleClass('open');
+
+		if (window.location.pathname == '/index.html') {
+			navMenu.hasClass("open") ? disableScroll() : enableScroll();
+		}
+	});
+
+	if ((window.location.pathname != "/index.html") && ($(window).width() < 768)) {
+    navLink.on("click", function() {
+      navBar.toggleClass("open");
+      navMenu.slideToggle(200).toggleClass("open");
+    });
+  }
 });

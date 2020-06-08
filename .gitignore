@@ -1,2 +1,38 @@
+node_modules
+
+
+# Mac temp files
 .DS_Store
-placeholders/
+.AppleDouble
+.LSOverride
+
+
+# Thumbnails
+._*
+
+# Files that might appear in the root of a volume
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+
+
+# Directories potentially created on remote AFP share
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+
+# only commit SCSS files (no CSS)
+css/*.css
+css/*/*.css
+
+
+# codekit
+scss/.sass-cache
+config.codekit
+*.codekit3
