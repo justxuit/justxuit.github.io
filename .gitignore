@@ -27,11 +27,6 @@ Temporary Items
 .apdisk
 
 
-# only commit SCSS files (no CSS)
-css/*.css
-css/*/*.css
-
-
 # codekit
 scss/.sass-cache
 config.codekit
