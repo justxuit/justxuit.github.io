@@ -47,9 +47,12 @@ $(function() {
 	});
 
 	if ((window.location.pathname != "/index.html") && ($(window).width() < 768)) {
-    navLink.on("click", function() {
-      navBar.toggleClass("open");
-      navMenu.slideToggle(200).toggleClass("open");
-    });
-  }
+		navLink.on("click", function() {
+			navBar.toggleClass("open");
+			navMenu.slideToggle(200).toggleClass("open");
+		});
+	}
+	  
+	$("#design-gallery a").simpleLightbox();
+	$("#art-gallery a").simpleLightbox();
 });

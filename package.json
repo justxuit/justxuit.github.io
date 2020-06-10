@@ -1,0 +1,32 @@
+{
+  "name": "portfolio_ux-2020-06",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/justxuit/portfolio_ux-2020-06.git"
+  },
+  "keywords": [
+    "ux",
+    "portfolio",
+    "xuan",
+    "huang",
+    "ux",
+    "user",
+    "experience",
+    "design"
+  ],
+  "author": "Xuan Huang",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/justxuit/portfolio_ux-2020-06/issues"
+  },
+  "homepage": "https://github.com/justxuit/portfolio_ux-2020-06#readme",
+  "dependencies": {
+    "simple-lightbox": "^2.1.0"
+  }
+}
