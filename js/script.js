@@ -53,6 +53,13 @@ $(function() {
 		});
 	}
 	  
-	$("#design-gallery a").simpleLightbox();
-	$("#art-gallery a").simpleLightbox();
+	// $("#design-gallery a").simpleLightbox();
+	// $("#art-gallery a").simpleLightbox();
+	// $(".lightbox a").simpleLightbox();
+	// $('#lightboxtest a').simpleLightbox();
 });
+
+
+$("#design-gallery a").simpleLightbox();
+$("#art-gallery a").simpleLightbox();
+$(".lightbox a").simpleLightbox();

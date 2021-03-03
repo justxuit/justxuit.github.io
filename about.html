@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
 
 <head>
-<meta charset="utf-8">
+    <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="The online portfolio of Xuan Huang, a UX designer based out of Michigan.">
 <meta name="keywords"
@@ -10,6 +10,7 @@
 
 <link href="https://fonts.googleapis.com/css?family=Karla:400,700%7COswald:300,400,600&display=swap"
     rel="stylesheet">
+<link rel="stylesheet" href="./css/simpleLightbox.min.css"">
 <link rel="stylesheet" href="./css/main.css">
 <title>Xuan Huang - About</title>
 
@@ -43,7 +44,6 @@
     <div id="nav-overlay">
         <nav>
             <a href="index.html">Work</a>
-            <a href="play.html">Play</a>
             <a href="about.html" class="current">About</a>
             <a href="files/xuan-huang_resume.pdf" target="_blank">Resume</a>
             <div class="social-container">
@@ -74,42 +74,97 @@
 
 
 <main id="about-page">
-    <section id="main">
-        <div class="max-width-sm">
-            <h1>Hi, I'm Xuan.</h1>
-            <br><br>
-            <div class="column-container half uneven">
-                <figure class="about-me-photo half-child small">
-                    <img src="img/spoderman.png" alt="Just hangin' out.">
-                </figure>
-                <div class="half-child big">
-                    <p>
-                        For all those wondering, it's pronounced like "Schwann" cells (shout-out to all the biology fans out there).
-                        <br><br>
-                        In my transition from front-end developer to experience designer, I've focused on how design-thinking and empathy for
-                        the end user can translate to innovation and improvements in the digital space. 
-                        <br><br>
-                        I believe that in order to achieve really great design, we must first take the time to understand the experiences, behaviors, and emotions that drive our users.
-                        <br><br>
-                        As a Master's student of HCI at the <a href="https://www.si.umich.edu/" target="_blank">University of Michigan</a>, I aim to further develop my skills as both a designer and coder. I look for opportunities to grow not only as an experience designer, but also as a creative thinker and an
-                        effective communicator.
-                        <br><br>
-                        In my free time, I enjoy baking desserts, losing track of time inside comic book stores, gaming (of both the video and board varieties), and chilling with my <a href="https://www.instagram.com/wilbur.corg/" target="_blank">corgi</a>.
-                        <br><br>
-                        You can always find me on <a href="https://www.linkedin.com/in/thexuanhuang/" target="_blank">LinkedIn</a>, check out my <a href="files/xuan-huang_resume.pdf" target="_blank">resume</a>, or shoot me an <a href="mailto:huangxu@umich.edu" target=”_blank”>email</a>.
-                    </p>
-                </div>
+<section id="main">
+    <div class="max-width-sm about-section">
+        <h1>Hi, I'm Xuan.</h1>
+        <br><br>
+        <div class="column-container half uneven">
+            <figure class="about-me-photo half-child small">
+                <img src="img/spoderman.png" alt="Just hangin' out.">
+            </figure>
+            <div class="half-child big">
+                <p>
+                    For all those wondering, it's pronounced like "Schwann" cells (shout-out to all the biology fans out
+                    there).
+                    <br><br>
+                    In my transition from front-end developer to experience designer, I've focused on how
+                    design-thinking and empathy for
+                    the end user can translate to innovation and improvements in the digital space.
+                    <br><br>
+                    I believe that in order to achieve really great design, we must first take the time to understand
+                    the experiences, behaviors, and emotions that drive our users.
+                    <br><br>
+                    As a Master's student of HCI at the <a href="https://www.si.umich.edu/" target="_blank">University
+                        of Michigan</a>, I aim to further develop my skills as both a designer and coder. I look for
+                    opportunities to grow not only as an experience designer, but also as a creative thinker and an
+                    effective communicator.
+                    <br><br>
+                    In my free time, I enjoy baking desserts, losing track of time inside comic book stores, gaming (of
+                    both the video and board varieties), and chilling with my <a
+                        href="https://www.instagram.com/wilbur.corg/" target="_blank">corgi</a>.
+                    <br><br>
+                    You can always find me on <a href="https://www.linkedin.com/in/thexuanhuang/"
+                        target="_blank">LinkedIn</a>, check out my <a href="files/xuan-huang_resume.pdf"
+                        target="_blank">resume</a>, or shoot me an <a href="mailto:huangxu@umich.edu"
+                        target=”_blank”>email</a>.
+                </p>
             </div>
-
-            <!-- <a href="files/xuan-huang_resume.pdf" id="download-resume" target="_blank">Download Resume</a> -->
-        </div>
-    </section>
-    <section>
-        <div class="max-width-sm">
-            <!-- <h2>Tools I Love</h2> -->
         </div>
 
-    </section>
+        <!-- <a href="files/xuan-huang_resume.pdf" id="download-resume" target="_blank">Download Resume</a> -->
+    </div>
+</section>
+
+<section class="design">
+    <h2>Graphic Design</h2>
+    <div class="max-width-sm flex-gallery-container" id="design-gallery">
+        <div class="gallery-item">
+            <a href="img/gallery/weather-app.png">
+                <img src="img/gallery/weather-app.png" alt="Minimalist weather app design">
+            </a>
+            <p class="gallery-title">Minimalist Weather App UI</p>
+            <p class="gallery-desc">Visual Design</p>
+        </div>
+
+        <div class="gallery-item">
+            <a href="img/gallery/digesta.png"">
+                <img src=" img/gallery/digesta.png" alt="Logo for a low FODMAP diet tracker app">
+            </a>
+            <p class="gallery-title">Mobile App Logo</p>
+            <p class="gallery-desc">Graphic Design</p>
+        </div>
+
+        <div class="gallery-item">
+            <a href="img/gallery/persona.png"">
+                <img src=" img/gallery/persona.png" alt="Persona template">
+            </a>
+            <p class="gallery-title">Persona Template #1</p>
+            <p class="gallery-desc">Visual Design</p>
+        </div>
+    </div>
+</section>
+
+<section class="illustration">
+    <h2>Illustration</h2>
+    <div class="max-width-sm flex-gallery-container" id="art-gallery">
+        <div class="gallery-item">
+            <a href="img/gallery/cereus.jpg"">
+                <img src=" img/gallery/cereus.jpg" alt="Night-blooming cereus">
+            </a>
+        </div>
+        <div class="gallery-item">
+            <a href="img/gallery/snow-queen.jpg"">
+                <img src=" img/gallery/snow-queen.jpg" alt="Snow queen">
+            </a>
+        </div>
+        <div class="gallery-item">
+            <a href="img/gallery/sunflora.jpg"">
+                <img src=" img/gallery/sunflora.jpg" alt="Sunflower">
+            </a>
+        </div>
+    </div>
+    <br><br>
+</section>
 </main>
 
 
@@ -122,7 +177,6 @@
         <div class="footer-navigation">
             <h6 class="footer-header">Navigation Links</h6>
             <p><a href="index.html">Work</a></p>
-            <p><a href="play.html">Play</a></p>
             <p><a href="about.html">About</a></p>
             <p><a href="files/xuan-huang_resume.pdf" target="_blank">Resume</a></p>
         </div>
@@ -130,8 +184,7 @@
             <h6 class="footer-header">Contact</h6>
             <p><i class="fas fa-map-marker-alt"></i> Ann Arbor, MI</p>
             <p><i class="fas fa-university"></i> University of Michigan - Ann Arbor</p>
-            <p><i class="far fa-envelope"></i> <a href="mailto:huangxu@umich.edu"
-                    target=”_blank”>huangxu@umich.edu</a>
+            <p><i class="far fa-envelope"></i> <a href="mailto:huangxu@umich.edu" target=”_blank”>huangxu@umich.edu</a>
             </p>
         </div>
         <div class="footer-social">
@@ -150,13 +203,14 @@
             </a>
         </div>
         <div class="footer-tag">
-            <p>Developed with ♥ by Xuan Huang &nbsp;&nbsp; | &nbsp;&nbsp; Copyright <span id="current-year"></span>
+            <p>Coded with ♥ by Xuan Huang &nbsp;&nbsp; | &nbsp;&nbsp; Copyright <span id="current-year"></span>
             </p>
         </div>
     </div>
 </footer>
 
 <script src="./js/lib/jquery-3.5.1.js"></script>
+<script src="./js/lib/simpleLightbox.min.js"></script>
 <script src="./js/script.js"></script>
 </body>
 
